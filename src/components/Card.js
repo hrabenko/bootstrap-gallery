@@ -1,4 +1,6 @@
 import {useState} from "react";
+import solidHeart from '../img/heart-solid.svg'
+import regularHeart from '../img/heart-regular.svg'
 
 function Card () {
     const [liked, setLiked] = useState(false);
@@ -10,9 +12,9 @@ function Card () {
                 <div className="d-flex justify-content-between">
                     <h5 className="card-title">Photo title</h5>
                     {liked ? (
-                        <img onClick={() => setLiked(false)} width="30px" src={"heart-solid.svg"}/>
+                        <img onClick={() => setLiked(false)} width="30px" src={solidHeart}/>
                     ) : (
-                        <img onClick={() => setLiked(true)} width="30px" src={"heart-regular.svg"}/>
+                        <img onClick={() => setLiked(true)} width="30px" src={regularHeart}/>
                     )}
                 </div>
                 <p className="card-text">Photo description. Lorem ipsum dolor.</p>

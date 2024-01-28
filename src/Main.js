@@ -1,6 +1,6 @@
-import HomePage from "./HomePage";
-import AboutMe from "./AboutMe";
-import Feedback from "./Feedback";
+import HomePage from "./pages/HomePage";
+import AboutMe from "./pages/AboutMe";
+import Feedback from "./pages/Feedback";
 
 function Main(props) {
     if (props.page === 'home') {
